@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8D7ED22A21A6AC6E00E06850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED22921A6AC6E00E06850 /* AppDelegate.swift */; };
-		8D7ED22C21A6AC6E00E06850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED22B21A6AC6E00E06850 /* ViewController.swift */; };
+		8D7ED22C21A6AC6E00E06850 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED22B21A6AC6E00E06850 /* ItemTableViewController.swift */; };
 		8D7ED22F21A6AC6E00E06850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7ED22D21A6AC6E00E06850 /* Main.storyboard */; };
-		8D7ED23221A6AC6E00E06850 /* Notepad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED23021A6AC6E00E06850 /* Notepad.xcdatamodeld */; };
+		8D7ED23221A6AC6E00E06850 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED23021A6AC6E00E06850 /* DataModel.xcdatamodeld */; };
 		8D7ED23421A6AC7100E06850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7ED23321A6AC7100E06850 /* Assets.xcassets */; };
 		8D7ED23721A6AC7100E06850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7ED23521A6AC7100E06850 /* LaunchScreen.storyboard */; };
+		8D7ED23F21A6AD1D00E06850 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED23E21A6AD1D00E06850 /* CategoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D7ED22621A6AC6E00E06850 /* Notepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7ED22921A6AC6E00E06850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D7ED22B21A6AC6E00E06850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D7ED22B21A6AC6E00E06850 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		8D7ED22E21A6AC6E00E06850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D7ED23121A6AC6E00E06850 /* Notepad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notepad.xcdatamodel; sourceTree = "<group>"; };
 		8D7ED23321A6AC7100E06850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D7ED23621A6AC7100E06850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D7ED23821A6AC7100E06850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7ED23E21A6AD1D00E06850 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				8D7ED22921A6AC6E00E06850 /* AppDelegate.swift */,
-				8D7ED22B21A6AC6E00E06850 /* ViewController.swift */,
-				8D7ED22D21A6AC6E00E06850 /* Main.storyboard */,
-				8D7ED23321A6AC7100E06850 /* Assets.xcassets */,
-				8D7ED23521A6AC7100E06850 /* LaunchScreen.storyboard */,
+				8D7ED24021A6AD2100E06850 /* ViewControllers */,
+				8D7ED24121A6AD3500E06850 /* Storyboards */,
+				8D7ED24321A6ADB500E06850 /* Data Model */,
+				8D7ED24221A6AD4B00E06850 /* Supporting Files */,
 				8D7ED23821A6AC7100E06850 /* Info.plist */,
-				8D7ED23021A6AC6E00E06850 /* Notepad.xcdatamodeld */,
 			);
 			path = Notepad;
+			sourceTree = "<group>";
+		};
+		8D7ED24021A6AD2100E06850 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D7ED23E21A6AD1D00E06850 /* CategoryTableViewController.swift */,
+				8D7ED22B21A6AC6E00E06850 /* ItemTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8D7ED24121A6AD3500E06850 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8D7ED22D21A6AC6E00E06850 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8D7ED24221A6AD4B00E06850 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D7ED23321A6AC7100E06850 /* Assets.xcassets */,
+				8D7ED23521A6AC7100E06850 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D7ED24321A6ADB500E06850 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D7ED23021A6AC6E00E06850 /* DataModel.xcdatamodeld */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D7ED23221A6AC6E00E06850 /* Notepad.xcdatamodeld in Sources */,
-				8D7ED22C21A6AC6E00E06850 /* ViewController.swift in Sources */,
+				8D7ED23221A6AC6E00E06850 /* DataModel.xcdatamodeld in Sources */,
+				8D7ED22C21A6AC6E00E06850 /* ItemTableViewController.swift in Sources */,
 				8D7ED22A21A6AC6E00E06850 /* AppDelegate.swift in Sources */,
+				8D7ED23F21A6AD1D00E06850 /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,13 +376,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8D7ED23021A6AC6E00E06850 /* Notepad.xcdatamodeld */ = {
+		8D7ED23021A6AC6E00E06850 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				8D7ED23121A6AC6E00E06850 /* Notepad.xcdatamodel */,
 			);
 			currentVersion = 8D7ED23121A6AC6E00E06850 /* Notepad.xcdatamodel */;
-			path = Notepad.xcdatamodeld;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
