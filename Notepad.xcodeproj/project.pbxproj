@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73D80FFC1921D70459640F53 /* Pods_Notepad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C0248E0CA27777EA9C046F /* Pods_Notepad.framework */; };
 		8D7ED22A21A6AC6E00E06850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED22921A6AC6E00E06850 /* AppDelegate.swift */; };
 		8D7ED22C21A6AC6E00E06850 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED22B21A6AC6E00E06850 /* ItemTableViewController.swift */; };
 		8D7ED22F21A6AC6E00E06850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7ED22D21A6AC6E00E06850 /* Main.storyboard */; };
-		8D7ED23221A6AC6E00E06850 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED23021A6AC6E00E06850 /* DataModel.xcdatamodeld */; };
 		8D7ED23421A6AC7100E06850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7ED23321A6AC7100E06850 /* Assets.xcassets */; };
 		8D7ED23721A6AC7100E06850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7ED23521A6AC7100E06850 /* LaunchScreen.storyboard */; };
 		8D7ED23F21A6AD1D00E06850 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED23E21A6AD1D00E06850 /* CategoryTableViewController.swift */; };
+		8D7ED24921A6EE1A00E06850 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED24821A6EE1A00E06850 /* Item.swift */; };
+		8D7ED24B21A6EE2100E06850 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ED24A21A6EE2100E06850 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A4DD8415A82A8C1583CEEA6 /* Pods-Notepad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notepad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notepad/Pods-Notepad.release.xcconfig"; sourceTree = "<group>"; };
+		5B2736DD907D764673702D24 /* Pods-Notepad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notepad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notepad/Pods-Notepad.debug.xcconfig"; sourceTree = "<group>"; };
+		63C0248E0CA27777EA9C046F /* Pods_Notepad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notepad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7ED22621A6AC6E00E06850 /* Notepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7ED22921A6AC6E00E06850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D7ED22B21A6AC6E00E06850 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		8D7ED22E21A6AC6E00E06850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8D7ED23121A6AC6E00E06850 /* Notepad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notepad.xcdatamodel; sourceTree = "<group>"; };
 		8D7ED23321A6AC7100E06850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D7ED23621A6AC7100E06850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D7ED23821A6AC7100E06850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7ED23E21A6AD1D00E06850 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		8D7ED24821A6EE1A00E06850 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8D7ED24A21A6EE2100E06850 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D80FFC1921D70459640F53 /* Pods_Notepad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E041953530A5C41616467A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63C0248E0CA27777EA9C046F /* Pods_Notepad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D7ED21D21A6AC6E00E06850 = {
 			isa = PBXGroup;
 			children = (
 				8D7ED22821A6AC6E00E06850 /* Notepad */,
 				8D7ED22721A6AC6E00E06850 /* Products */,
+				FA5FF82B415DB61E77B9C7DD /* Pods */,
+				1E041953530A5C41616467A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +114,19 @@
 		8D7ED24321A6ADB500E06850 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				8D7ED23021A6AC6E00E06850 /* DataModel.xcdatamodeld */,
+				8D7ED24A21A6EE2100E06850 /* Category.swift */,
+				8D7ED24821A6EE1A00E06850 /* Item.swift */,
 			);
 			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		FA5FF82B415DB61E77B9C7DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B2736DD907D764673702D24 /* Pods-Notepad.debug.xcconfig */,
+				4A4DD8415A82A8C1583CEEA6 /* Pods-Notepad.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D7ED23B21A6AC7100E06850 /* Build configuration list for PBXNativeTarget "Notepad" */;
 			buildPhases = (
+				E727157C0AF499F3345F24D1 /* [CP] Check Pods Manifest.lock */,
 				8D7ED22221A6AC6E00E06850 /* Sources */,
 				8D7ED22321A6AC6E00E06850 /* Frameworks */,
 				8D7ED22421A6AC6E00E06850 /* Resources */,
+				F36267CF532DC1D6C96DA263 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,15 +197,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E727157C0AF499F3345F24D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notepad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F36267CF532DC1D6C96DA263 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Notepad/Pods-Notepad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notepad/Pods-Notepad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D7ED22221A6AC6E00E06850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D7ED23221A6AC6E00E06850 /* DataModel.xcdatamodeld in Sources */,
 				8D7ED22C21A6AC6E00E06850 /* ItemTableViewController.swift in Sources */,
 				8D7ED22A21A6AC6E00E06850 /* AppDelegate.swift in Sources */,
+				8D7ED24921A6EE1A00E06850 /* Item.swift in Sources */,
 				8D7ED23F21A6AD1D00E06850 /* CategoryTableViewController.swift in Sources */,
+				8D7ED24B21A6EE2100E06850 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +391,7 @@
 		};
 		8D7ED23C21A6AC7100E06850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B2736DD907D764673702D24 /* Pods-Notepad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -337,6 +409,7 @@
 		};
 		8D7ED23D21A6AC7100E06850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A4DD8415A82A8C1583CEEA6 /* Pods-Notepad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,19 +447,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8D7ED23021A6AC6E00E06850 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8D7ED23121A6AC6E00E06850 /* Notepad.xcdatamodel */,
-			);
-			currentVersion = 8D7ED23121A6AC6E00E06850 /* Notepad.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8D7ED21E21A6AC6E00E06850 /* Project object */;
 }
